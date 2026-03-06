@@ -295,6 +295,72 @@
             font-size: 0.92rem;
         }
 
+        .cert-wall {
+            margin-top: 18px;
+            display: grid;
+            gap: 14px;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+
+        .cert-card {
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            overflow: hidden;
+            background: var(--surface);
+            box-shadow: 0 8px 20px rgba(25, 39, 62, 0.06);
+            transition: transform 0.22s ease, box-shadow 0.22s ease;
+        }
+
+        .cert-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 14px 24px rgba(25, 39, 62, 0.14);
+        }
+
+        .cert-card a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .cert-thumb {
+            position: relative;
+            height: 180px;
+            background: linear-gradient(135deg, #eef3fb 0%, #e8edf7 100%);
+            border-bottom: 1px solid #e4e9f2;
+            overflow: hidden;
+        }
+
+        .cert-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.35s ease;
+            display: block;
+        }
+
+        .cert-card:hover .cert-thumb img {
+            transform: scale(1.06);
+        }
+
+        .cert-pdf {
+            height: 100%;
+            display: grid;
+            place-items: center;
+            color: #1f2f4a;
+            font-weight: 700;
+            font-size: 0.95rem;
+            text-align: center;
+            padding: 12px;
+        }
+
+        .cert-body {
+            padding: 10px 12px 12px;
+            font-size: 0.86rem;
+            color: #334155;
+            line-height: 1.5;
+            min-height: 66px;
+        }
+
         .contact {
             margin-top: 20px;
             background: #fdf2f2;
@@ -354,10 +420,12 @@
             .quick-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
             .featured-grid, .two-col { grid-template-columns: 1fr; }
             .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+            .cert-wall { grid-template-columns: repeat(2, minmax(0, 1fr)); }
         }
 
         @media (max-width: 640px) {
             .quick-facts, .gallery { grid-template-columns: 1fr; }
+            .cert-wall { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -377,7 +445,7 @@
 
             <div class="quick-facts">
                 <div class="fact">
-                    <strong>GPA 92.51/100</strong>
+                    <strong>GPA 91.29/100</strong>
                     <span>勤勉踏实，成绩稳步前行</span>
                 </div>
                 <div class="fact">
@@ -514,6 +582,106 @@
                 <a class="btn primary" href="mailto:1716973316@stu.xjtu.edu.cn?subject=%E5%A5%97%E7%A3%81%E5%92%A8%E8%AF%A2-%E9%A9%AC%E7%9A%93%E7%84%B6"><i class="fa fa-paper-plane"></i> 发送联系邮件</a>
                 <a class="btn secondary" href="SimpleResume_2026_3_6_用于保研第一套版_.pdf" target="_blank">查看 PDF 简历</a>
             </div>
+        </section>
+
+        <h2 class="section-title"><i class="fa fa-award"></i> 奖项证书墙</h2>
+        <section class="cert-wall">
+            <article class="cert-card">
+                <a href="ROBOCON飞身上篮竞技赛一等奖.jpg" target="_blank">
+                    <div class="cert-thumb"><img src="ROBOCON飞身上篮竞技赛一等奖.jpg" alt="ROBOCON飞身上篮竞技赛一等奖"></div>
+                    <div class="cert-body">ROBOCON 飞身上篮竞技赛一等奖</div>
+                </a>
+            </article>
+            <article class="cert-card">
+                <a href="ROBOCON飞身上篮全能奖.jpg" target="_blank">
+                    <div class="cert-thumb"><img src="ROBOCON飞身上篮全能奖.jpg" alt="ROBOCON飞身上篮全能奖"></div>
+                    <div class="cert-body">ROBOCON 飞身上篮全能奖</div>
+                </a>
+            </article>
+            <article class="cert-card">
+                <a href="ROBOCON排球挑战赛一等奖.jpg" target="_blank">
+                    <div class="cert-thumb"><img src="ROBOCON排球挑战赛一等奖.jpg" alt="ROBOCON排球挑战赛一等奖"></div>
+                    <div class="cert-body">ROBOCON 排球挑战赛一等奖</div>
+                </a>
+            </article>
+            <article class="cert-card">
+                <a href="ROBOCON技能挑战赛投篮一等奖.jpg" target="_blank">
+                    <div class="cert-thumb"><img src="ROBOCON技能挑战赛投篮一等奖.jpg" alt="ROBOCON技能挑战赛投篮一等奖"></div>
+                    <div class="cert-body">ROBOCON 技能挑战赛投篮一等奖</div>
+                </a>
+            </article>
+            <article class="cert-card">
+                <a href="ROBOCON技能挑战赛运球一等奖.jpg" target="_blank">
+                    <div class="cert-thumb"><img src="ROBOCON技能挑战赛运球一等奖.jpg" alt="ROBOCON技能挑战赛运球一等奖"></div>
+                    <div class="cert-body">ROBOCON 技能挑战赛运球一等奖</div>
+                </a>
+            </article>
+            <article class="cert-card">
+                <a href="ROBOCON四足竞速赛二等奖.jpg" target="_blank">
+                    <div class="cert-thumb"><img src="ROBOCON四足竞速赛二等奖.jpg" alt="ROBOCON四足竞速赛二等奖"></div>
+                    <div class="cert-body">ROBOCON 四足竞速赛二等奖</div>
+                </a>
+            </article>
+            <article class="cert-card">
+                <a href="ROBOCON四足越野赛二等奖.jpg" target="_blank">
+                    <div class="cert-thumb"><img src="ROBOCON四足越野赛二等奖.jpg" alt="ROBOCON四足越野赛二等奖"></div>
+                    <div class="cert-body">ROBOCON 四足越野赛二等奖</div>
+                </a>
+            </article>
+            <article class="cert-card">
+                <a href="ROBOCON四足障碍赛三等奖.jpg" target="_blank">
+                    <div class="cert-thumb"><img src="ROBOCON四足障碍赛三等奖.jpg" alt="ROBOCON四足障碍赛三等奖"></div>
+                    <div class="cert-body">ROBOCON 四足障碍赛三等奖</div>
+                </a>
+            </article>
+            <article class="cert-card">
+                <a href="RST水下作业国赛三等奖.jpg" target="_blank">
+                    <div class="cert-thumb"><img src="RST水下作业国赛三等奖.jpg" alt="RST水下作业国赛三等奖"></div>
+                    <div class="cert-body">RST 水下作业国赛三等奖</div>
+                </a>
+            </article>
+            <article class="cert-card">
+                <a href="RST水下作业赛陕西赛区二等奖.jpg" target="_blank">
+                    <div class="cert-thumb"><img src="RST水下作业赛陕西赛区二等奖.jpg" alt="RST水下作业赛陕西赛区二等奖"></div>
+                    <div class="cert-body">RST 水下作业赛陕西赛区二等奖</div>
+                </a>
+            </article>
+            <article class="cert-card">
+                <a href="RST目标抓取国赛三等奖.jpg" target="_blank">
+                    <div class="cert-thumb"><img src="RST目标抓取国赛三等奖.jpg" alt="RST目标抓取国赛三等奖"></div>
+                    <div class="cert-body">RST 目标抓取国赛三等奖</div>
+                </a>
+            </article>
+            <article class="cert-card">
+                <a href="RST目标抓取赛陕西赛区二等奖.jpg" target="_blank">
+                    <div class="cert-thumb"><img src="RST目标抓取赛陕西赛区二等奖.jpg" alt="RST目标抓取赛陕西赛区二等奖"></div>
+                    <div class="cert-body">RST 目标抓取赛陕西赛区二等奖</div>
+                </a>
+            </article>
+            <article class="cert-card">
+                <a href="2024RoCupAUV赛道国赛三等奖.pdf" target="_blank">
+                    <div class="cert-thumb">
+                        <div class="cert-pdf"><i class="fa fa-file-pdf"></i>&nbsp; PDF 证书</div>
+                    </div>
+                    <div class="cert-body">2024 RoboCup AUV 赛道国赛三等奖</div>
+                </a>
+            </article>
+            <article class="cert-card">
+                <a href="2025中国机器人大赛暨RoboCup机器人世界杯中国赛（中国机器人大赛赛区）-水下机器人-水中作业项目（总决赛）-Y2509T1449769-传奇战神龙王队获奖证书.pdf" target="_blank">
+                    <div class="cert-thumb">
+                        <div class="cert-pdf"><i class="fa fa-file-pdf"></i>&nbsp; PDF 证书</div>
+                    </div>
+                    <div class="cert-body">2025 中国机器人大赛水中作业项目获奖证书</div>
+                </a>
+            </article>
+            <article class="cert-card">
+                <a href="中国机器人及人工智能大赛省级二等奖.pdf" target="_blank">
+                    <div class="cert-thumb">
+                        <div class="cert-pdf"><i class="fa fa-file-pdf"></i>&nbsp; PDF 证书</div>
+                    </div>
+                    <div class="cert-body">中国机器人及人工智能大赛省级二等奖</div>
+                </a>
+            </article>
         </section>
 
         <footer>
