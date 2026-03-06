@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>马皓然 | Haoran Ma - 个人主页</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --primary-color: #003366; --text-color: #333; --bg-color: #f4f7f9; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: var(--text-color); margin: 0; background: var(--bg-color); }
+        .container { max-width: 900px; margin: 40px auto; background: #fff; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-radius: 8px; }
+        
+        /* Header Section */
+        header { display: flex; align-items: center; border-bottom: 2px solid var(--primary-color); padding-bottom: 20px; margin-bottom: 30px; }
+        .profile-img { width: 150px; height: 200px; object-fit: cover; border-radius: 5px; margin-right: 30px; border: 1px solid #ddd; }
+        .info h1 { margin: 0; color: var(--primary-color); font-size: 2.2em; }
+        .info p { margin: 5px 0; font-size: 1.1em; }
+        .social-links a { margin-right: 15px; color: var(--primary-color); text-decoration: none; font-weight: bold; }
+
+        /* Section Styling */
+        h2 { border-left: 5px solid var(--primary-color); padding-left: 15px; color: var(--primary-color); margin-top: 40px; }
+        .item { margin-bottom: 20px; }
+        .item-title { font-weight: bold; font-size: 1.1em; display: flex; justify-content: space-between; }
+        .tag { background: #e0eafc; color: #003366; padding: 2px 8px; border-radius: 4px; font-size: 0.85em; margin-right: 5px; }
+        
+        /* Project Cards */
+        .project-card { border: 1px solid #eee; padding: 15px; border-radius: 6px; margin-top: 10px; transition: 0.3s; }
+        .project-card:hover { border-color: var(--primary-color); box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+        
+        .stat-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; background: #f9f9f9; padding: 15px; border-radius: 6px; }
+        .skill-tag { display: inline-block; background: #eee; padding: 3px 10px; border-radius: 15px; font-size: 0.9em; margin: 3px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <img src="your-photo.jpg" alt="马皓然" class="profile-img">
+        <div class="info">
+            <h1>马皓然 (Haoran Ma)</h1>
+            <p><strong>西安交通大学 · 自动化学院</strong> [cite: 3]</p>
+            <p><i class="fa fa-envelope"></i> 1716973316@stu.xjtu.edu.cn [cite: 2]</p>
+            <p><i class="fa fa-location-dot"></i> 意向方向：具身智能 / 机器人控制 / 强化学习 [cite: 3]</p>
+            <div class="social-links">
+                <a href="https://github.com/hrm-666"><i class="fab fa-github"></i> GitHub</a>
+                <a href="#"><i class="fa fa-file-pdf"></i> 下载完整简历</a>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <h2><i class="fa fa-graduation-cap"></i> 教育背景</h2>
+        <div class="item">
+            <div class="item-title">
+                <span>西安交通大学 · 自动化专业 (学科评估: A+)</span>
+                <span>2022 - 2026 (预计)</span>
+            </div>
+            <div class="stat-grid">
+                <div><strong>GPA:</strong> 92.51 / 100 [cite: 7]</div>
+                <div><strong>专业排名:</strong> 6 / 172 (Top 3.4%) [cite: 7]</div>
+                <div><strong>荣誉:</strong> 国家奖学金 (2024-2025) [cite: 6]</div>
+                <div><strong>头衔:</strong> 西安交大“优秀学生” [cite: 6]</div>
+            </div>
+            <p><strong>核心课程：</strong> 程序设计基础(100)、工数(98)、线代(96)、模电(95) [cite: 8]</p>
+        </div>
+    </section>
+
+    <section>
+        <h2><i class="fa fa-flask"></i> 科研与项目经历</h2>
+        <div class="project-card">
+            <div class="item-title">
+                <span>基于强化学习的人形机器人运动控制 (Unitree G1)</span>
+                <span>2025.12 - 至今</span>
+            </div>
+            <p><span class="tag">项目负责人</span> 西安交大“信息新蕾计划” [cite: 12]</p>
+            <ul>
+                <li>基于 Isaac Gym 搭建 G1 仿真环境，配置 GPU 服务器完成强化学习训练 。</li>
+                <li>通过微调 Reward Shaping 抑制关节抖动，探索 Sim-to-Real 迁移验证 [cite: 14, 15]。</li>
+            </ul>
+        </div>
+
+        <div class="project-card">
+            <div class="item-title">
+                <span>CS231n: 面向视觉识别的卷积神经网络</span>
+                <span>2025.01 - 2025.02</span>
+            </div>
+            <p><span class="tag">课程实践</span> <a href="https://github.com/hrm-666/CS231n-Assignments">代码仓库</a> [cite: 16, 17]</p>
+            <ul>
+                <li>NumPy 手写实现 CNN 前/反向传播，掌握 BatchNorm, Dropout 及 Adam 优化器 [cite: 20]。</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2><i class="fa fa-trophy"></i> 竞赛获奖</h2>
+        <div class="item">
+            <div class="item-title">
+                <span>全国大学生机器人大赛 ROBOCON (飞身上篮)</span>
+                <span>国家级一等奖 [cite: 28]</span>
+            </div>
+            <p><strong>职责：</strong> 整车车长，主导高性能全向轮底盘控制系统构建 [cite: 29]。</p>
+            <p><strong>技术亮点：</strong> FreeRTOS 多任务解耦、1kHz FDCAN 反馈、IMU 位姿融合算法 [cite: 30]。</p>
+        </div>
+        <div class="item">
+            <div class="item-title">
+                <span>RoboCup 中国赛 / 美国建模竞赛</span>
+                <span>国三 / H 奖 [cite: 32, 38]</span>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2><i class="fa fa-code"></i> 专业技能</h2>
+        <div>
+            <strong>编程 & 框架:</strong> 
+            <span class="skill-tag">Python (PyTorch)</span> <span class="skill-tag">C/C++</span> <span class="skill-tag">ROS2</span> [cite: 9]
+        </div>
+        <div style="margin-top:10px;">
+            <strong>仿真 & 嵌入式:</strong> 
+            <span class="skill-tag">Isaac Gym</span> <span class="skill-tag">MuJoCo</span> <span class="skill-tag">STM32</span> <span class="skill-tag">FreeRTOS</span> [cite: 9]
+        </div>
+    </section>
+</div>
+
+</body>
+</html>
